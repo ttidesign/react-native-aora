@@ -1,12 +1,12 @@
 import { View, Text } from "react-native";
 import React from "react";
 
-const AuthLayout = () => {
+const BookMark = () => {
   return (
     <View>
-      <Text>AuthLayout</Text>
+      <Text>BookMark</Text>
     </View>
   );
 };
 
-export default AuthLayout;
+export default BookMark;
