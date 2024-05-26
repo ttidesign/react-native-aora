@@ -31,7 +31,13 @@ const Home = () => {
 				data={posts}
 				keyExtractor={(item) => item.$id}
 				renderItem={({ item }) => (
-					<VideoCard video={item} thumbnail={item.thumbnail} />
+					<VideoCard
+						title={item.title}
+						thumbnail={item.thumbnail}
+						video={item.video}
+						creator={item.creator.username}
+						avatar={item.creator.avatar}
+					/>
 				)}
 				ListHeaderComponent={() => (
 					<View className='my-6 px-4 space-y-6'>

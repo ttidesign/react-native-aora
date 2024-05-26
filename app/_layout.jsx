@@ -1,6 +1,5 @@
-import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
-import { Slot, Stack, SplashScreen } from 'expo-router';
+import { Stack, SplashScreen } from 'expo-router';
 import { useFonts } from 'expo-font';
 import { useEffect } from 'react';
 import GlobalProvider from '../context/GlobalProvider';
@@ -33,10 +32,7 @@ const RootLayout = () => {
 				<Stack.Screen name='index' options={{ headerShown: false }} />
 				<Stack.Screen name='(auth)' options={{ headerShown: false }} />
 				<Stack.Screen name='(tabs)' options={{ headerShown: false }} />
-				<Stack.Screen
-					name='(/search/[query])'
-					options={{ headerShown: false }}
-				/>
+				<Stack.Screen name='search/[query]' options={{ headerShown: false }} />
 			</Stack>
 		</GlobalProvider>
 	);
